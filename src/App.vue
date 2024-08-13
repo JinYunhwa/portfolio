@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <PortfolioHeader />
+    <main class="container mt-3 pt-3">
+      <router-view></router-view>
+    </main>
+    <PortfolioFooter />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PortfolioHeader from './components/PortfolioHeader.vue';
+import PortfolioFooter from './components/PortfolioFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PortfolioHeader,
+    PortfolioFooter
   }
-}
+};
 </script>
 
 <style>
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  margin-top: 60px; /* 헤더 높이만큼 마진 추가 */
 }
 </style>
