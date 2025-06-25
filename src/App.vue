@@ -1,43 +1,30 @@
-<template>
-  <div id="app">
-    <PortfolioHeader />
-    <main class="container mt-3 pt-3">
-      <router-view></router-view>
-    </main>
-    <PortfolioFooter />
-  </div>
-</template>
-
-<script>
-import PortfolioHeader from './components/PortfolioHeader.vue';
-import PortfolioFooter from './components/PortfolioFooter.vue';
-
-export default {
-  name: 'App',
-  components: {
-    PortfolioHeader,
-    PortfolioFooter
-  }
-};
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<style>
-body {
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+<template>
+  <div>
+    <a href="https://vite.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
+  </div>
+  <HelloWorld msg="Vite + Vue" />
+</template>
 
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-
-main {
-  margin-top: 60px; /* 헤더 높이만큼 마진 추가 */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
