@@ -17,6 +17,10 @@
                 <small class="text-muted">컴퓨터 메카트로닉스 공학부 소프트웨어 전공</small>
             </li>
             <li class="list-group-item">
+                <h6 class="mb-1 fw-semibold">공공데이터 일경험 수련생 인턴</h6>
+                <small class="text-muted">공공데이터 개방, 품질진단 및 개선, 구축, 수집 업무</small>
+            </li>
+            <li class="list-group-item">
                 <h6 class="mb-1 fw-semibold">SK네트웍스 AI 패밀리캠프 3기 수료</h6>
                 <small class="text-muted">파이널 프로젝트 최우수상 수상</small>
             </li>
